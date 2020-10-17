@@ -1,0 +1,9 @@
+flask==1.1.2
+boto3==1.14.57
+botocore==1.17.57
+torch==1.2.0
+tqdm==4.48.2
+requests
+numpy==1.19.1
+click==7.1.2
+cacremoses==0.0.43
