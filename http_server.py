@@ -117,4 +117,4 @@ if isinstance(model, nn.DataParallel):
 # for step, batch in enumerate(test_dataloader):
 model.eval()
 
-# app.run(port=9909)
+app.run(port=9909)
