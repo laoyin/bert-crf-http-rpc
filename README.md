@@ -4,6 +4,11 @@ bert-crf ：https://github.com/lonePatient/BERT-NER-Pytorch
 
 crf、bert等介绍
 
+关注个人知乎，任何问题可以私信解决
+
+[知乎文字综述](https://zhuanlan.zhihu.com/p/266069239)
+[个人主页](https://www.zhihu.com/people/yin-xing-pan/posts)
+
 
 
 3：python3 -m venv venv 创建指定虚拟环境
