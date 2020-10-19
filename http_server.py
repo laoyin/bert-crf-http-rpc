@@ -69,13 +69,15 @@ def get_court_msg():
             "attention_mask": torch.tensor([sen_code["attention_mask"]])
         }
         outputs = model(**inputs)
-        logits = outputs[0]
-        tags = model.crf.decode(logits, inputs['attention_mask'])
+        print(outputs[0])
+        logits = outputs[0][0:]
+        tags = model.crf.decode(logits)
         tags = tags.squeeze(0).cpu().numpy().tolist()
-    preds = tags[0][1:-1]  # [CLS]XXXX[SEP]
+    # preds = tags[0][1:-1]  # [CLS]XXXX[SEP]
+    preds = tags[0]
     print(preds)
     label_entities = get_entities(preds, id2label)
-    print(label_entities)
+    print("get entities", label_entities)
     return_list = ""
     for index, label in enumerate(preds):
         print("label",label, index)
